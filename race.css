@@ -1,1 +1,67 @@
-dfgadfsdf
+header {
+    background-color:purple;
+    color: white;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}body {
+   
+
+    background-color:darkgray;
+}
+
+
+
+
+
+#roll-resultOne {
+
+    float: left;
+    margin-left: 34px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+#roll-resultTwo {
+
+    float: right;
+    margin-bottom: 50px;
+    
+}
+
+#loser, #winner {
+    display: none;
+}
+
+.dice-group {
+  display: flex;
+  clear: both;
+  justify-content: space-between;
+  
+}
+
+.dice-pair {
+  display: flex;
+  
+}
+
+.formInput {
+  text-align: center;
+  }
+
+  .formText {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  #bet {
+      width: 20%;
+      border-radius: 7px;
+  }
+
+  .buttonDiv{
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 0;
+  }
