@@ -24,33 +24,27 @@ numbers = [
 ]
 
 $(function() {
-  //var dice;
   // For creating a new Diceset
   dice = new DiceSet();
 
 
   $("#rollButton").click(function() {
-    //var dice, outcomeList, message;
+   
     outcomeList = dice.roll();
     console.log(outcomeList);
-
-    // a good start, but you really don't want to reference //the array this way
-
-    // use a for loop here instead of outcomeList
-
     message = "Rolled Dice!  " + outcomeList + " <br>";
     $("#outcome").append(message);
   });
 
 
-  // place click handler for reset here
+  // place click button for reset here
   $("#diceResetButton").click(function() {
     dice.reset();
     $("#outcome").html("");
     console.log("Reset is Supposed to happen...")
   });
   
-  //click handler for changing the number of sides
+  //click button for changing the number of sides
   $("#setDiceSetSidesButton").click(function() {
     var chosen_number = $("#setDiceSetSides").val();
     dice.setNumSides(chosen_number);
@@ -77,9 +71,7 @@ function howMaySides(setDiceSetSides) {
     "please choose a die in the reccommend sides of 4,6,8,10,12";
   }
 }
-
-
-  // click handler for setting the number of dice in the diceset 
+  // click button for setting the number of dice in the diceset 
   $("#setDiceSetSizeButton").click(function() {
     var chosen_number = $("#setDiceSetSize").val();
     dice.setDiceSetSize(chosen_number);
@@ -87,10 +79,14 @@ function howMaySides(setDiceSetSides) {
     console.log("Dice Set Amount Should change...")
   });
 
-  // click handler for getting the average number of rolls
+  // click button for getting the average number of rolls
   $("#RollAverageButton").click(function() {
     alert(dice.getAverage());
     console.log("Average is Supposed to Be Displayed...")
   });
 
 });
+
+
+
+
