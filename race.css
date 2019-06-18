@@ -29,39 +29,39 @@ header {
     margin-bottom: 50px;
     
 }
-
-#loser, #winner {
-    display: none;
-}
-
 .dice-group {
   display: flex;
   clear: both;
   justify-content: space-between;
-  
 }
 
 .dice-pair {
   display: flex;
-  
 }
 
 .formInput {
   text-align: center;
   }
 
-  .formText {
+.formText {
       font-size: 20px;
       margin-bottom: 10px;
-  }
+}
 
-  #bet {
+#bet {
       width: 20%;
       border-radius: 7px;
-  }
+}
 
-  .buttonDiv{
+.buttonDiv{
       text-align: center;
       margin-top: 10px;
       margin-bottom: 0;
-  }
+}
+
+h1 {color: red
+};
+
+footer{color: red};
+
+
