@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <p3 style="color:blue"> You will need a way to keep track of your score and your credits.<br>
+    First player to 100 wins the game.<br>
+  The value and cost are listed below. Enjoy!!!</p3><br>
+  </body>
+  
+  <body>
+  
+    <div class="rollApp">
+  
+      <div class="bar">
+        <div id="die1" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice1()">Roll<br>D4</button>
+        <div id="d4hist1" class="hist">0</div>
+        <div id="d4hist2" class="hist">0</div>
+        <div id="d4hist3" class="hist">0</div>
+        <div id="d4hist4" class="hist">0</div>
+        <div id="d4hist5" class="hist">0</div>
+        <div id="d4hist6" class="hist">0</div>
+        <div id="d4hist7" class="hist">0</div>
+        <div id="d4hist8" class="hist">0</div>
+        <div id="d4hist9" class="hist">0</div>
+        <div id="d4hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist1()">Clear</button>
+      </div>
+  
+      <div class="bar">
+        <div id="die2" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice2()">Roll<br>D6</button>
+        <div id="d6hist1" class="hist">0</div>
+        <div id="d6hist2" class="hist">0</div>
+        <div id="d6hist3" class="hist">0</div>
+        <div id="d6hist4" class="hist">0</div>
+        <div id="d6hist5" class="hist">0</div>
+        <div id="d6hist6" class="hist">0</div>
+        <div id="d6hist7" class="hist">0</div>
+        <div id="d6hist8" class="hist">0</div>
+        <div id="d6hist9" class="hist">0</div>
+        <div id="d6hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist2()">Clear</button>
+      </div>
+  
+      <div class="bar">
+        <div id="die3" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice3()">Roll<br>D8</button>
+        <div id="d8hist1" class="hist">0</div>
+        <div id="d8hist2" class="hist">0</div>
+        <div id="d8hist3" class="hist">0</div>
+        <div id="d8hist4" class="hist">0</div>
+        <div id="d8hist5" class="hist">0</div>
+        <div id="d8hist6" class="hist">0</div>
+        <div id="d8hist7" class="hist">0</div>
+        <div id="d8hist8" class="hist">0</div>
+        <div id="d8hist9" class="hist">0</div>
+        <div id="d8hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist3()">Clear</button>
+      </div>
+  
+      <div class="bar">
+        <div id="die4" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice4()">Roll<br>D10</button>
+        <div id="d10hist1" class="hist">0</div>
+        <div id="d10hist2" class="hist">0</div>
+        <div id="d10hist3" class="hist">0</div>
+        <div id="d10hist4" class="hist">0</div>
+        <div id="d10hist5" class="hist">0</div>
+        <div id="d10hist6" class="hist">0</div>
+        <div id="d10hist7" class="hist">0</div>
+        <div id="d10hist8" class="hist">0</div>
+        <div id="d10hist9" class="hist">0</div>
+        <div id="d10hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist4()">Clear</button>
+      </div>
+  
+      <div class="bar">
+        <div id="die5" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice5()">Roll<br>D12</button>
+        <div id="d12hist1" class="hist">0</div>
+        <div id="d12hist2" class="hist">0</div>
+        <div id="d12hist3" class="hist">0</div>
+        <div id="d12hist4" class="hist">0</div>
+        <div id="d12hist5" class="hist">0</div>
+        <div id="d12hist6" class="hist">0</div>
+        <div id="d12hist7" class="hist">0</div>
+        <div id="d12hist8" class="hist">0</div>
+        <div id="d12hist9" class="hist">0</div>
+        <div id="d12hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist5()">Clear</button>
+      </div>
+  
+      <div class="bar">
+        <div id="die6" class="dice">0</div>
+        <button class="rollButton" onclick="rollDice6()">Roll<br>D20</button>
+        <div id="d20hist1" class="hist">0</div>
+        <div id="d20hist2" class="hist">0</div>
+        <div id="d20hist3" class="hist">0</div>
+        <div id="d20hist4" class="hist">0</div>
+        <div id="d20hist5" class="hist">0</div>
+        <div id="d20hist6" class="hist">0</div>
+        <div id="d20hist7" class="hist">0</div>
+        <div id="d20hist8" class="hist">0</div>
+        <div id="d20hist9" class="hist">0</div>
+        <div id="d20hist10" class="hist">0</div>
+        <button class="clearButton" onclick="clearHist6()">Clear</button>
+      </div>
+  </div>
+  <body>
+      <p1 id="diceValuesCost" style="color:red">
+          <strong> Dice Values: Cost </strong>                                         
+          4- Sided Die = $4,                                         
+          6- Sided Die = $5,                                         
+          8- Sided Die = $6,                                         
+          10-Sided Die = $7,                                        
+          12-Sided Die = $8.                                      
+        </p1> <br>
+        <p2 style="color:red">
+           <strong> Dice Value: Return </strong>
+            4-Sided die = $8,
+            6-Sided die = $7,
+            8-Sided die = $6,
+            10-Sided die = $5,
+            12-Sided die = $4.
+        </p2>
+
+  </body>
+
+  <script src="text.js"></script>
+  </html>
+
+  

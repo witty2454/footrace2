@@ -1,0 +1,58 @@
+body {
+	background-color: black;
+	font-family: 'Share Tech Mono', monospace;
+}
+.rollApp {
+	background-color: lightgray;
+	border: 3px outset lightgray;
+	border-radius: 5px;
+	width: 750px;
+	margin: 0 auto;
+}
+.bar {
+	display: flex;
+	margin: 10px;
+}
+.dice {
+  display: none;
+}
+.hist {
+  display: inline-block;
+  width: 44px;
+	font-weight: bold;
+	background: black;
+	color: red;
+	border: red 1px solid;
+	border-radius: 5px;
+	padding: 4px;
+	font-size: 30px;
+	text-align: center;
+	margin: 5px;
+}
+.rollButton {
+	background-color: black;
+	border-color: red;
+	border-radius: 5px;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	color: red;
+	height: 45px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.clearButton {
+	background-color: black;
+	border-color: red;
+	border-radius: 5px;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+	color: white;
+	height: 45px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+
+
+
