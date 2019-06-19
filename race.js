@@ -37,7 +37,7 @@ $(function() {
   });
 
 
-  // place click button for reset here
+  // please click button for reset here
   $("#diceResetButton").click(function() {
     dice.reset();
     $("#outcome").html("");
@@ -80,12 +80,68 @@ function howMaySides(setDiceSetSides) {
   });
 
   // click button for getting the average number of rolls
-  $("#RollAverageButton").click(function() {
-    alert(dice.getAverage());
+  $("#RollTotalButton").click(function() {
+    alert(dice.getTotal());
     console.log("Average is Supposed to Be Displayed...")
   });
-
+// THis is the code that runs my random number selction for the dice.
 });
+class DiceSet {
+  constructor() {
+    this.sides = 6;
+    this.quantity = 2;
+    this.history = [];
+    this.runningTotal = 0;
+  }
+
+  singleRoll() {
+    return Math.floor(Math.random() * this.sides + 1);
+  }
+
+  setNumSides(numSides) {
+    this.sides = numSides;
+    this.reset();
+  }
+
+  setDiceSetSize(numDice) {
+    this.quantity = numDice;
+    this.reset();
+  }
+
+  reset() {
+    this.history = [];
+    this.runningTotal = 0;
+  }
+
+  numRolls() {
+    return this.history.length;
+  }
+
+  getTotal() {
+    return this.runningTotal;
+  }
+
+  roll() {
+    var total, same, rollSet, i;
+    same = true;
+    rollSet = [];
+    rollSet[0] = this.singleRoll();
+    total = rollSet[0];
+    for (i = 1; i < this.quantity; i++) {
+      rollSet[i] = this.singleRoll();
+      total += rollSet[i];
+      if (rollSet[i] !== rollSet[i-1]) {
+        same = false;
+      }
+    }
+    this.history.push(total);
+    this.runningTotal += total;
+    return rollSet;
+    
+
+  }
+}
+
 
 
 
